@@ -1,14 +1,23 @@
 package com.geektech;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("начало");
-        System.out.println(ageTemperature(67, -40));
-        System.out.println(ageTemperature(34, -10));
-        System.out.println(ageTemperature(39, -40));
-        System.out.println(ageTemperature(19, 34));
-        System.out.println(ageTemperature(15, 10));
+        int age = generateRandomAge();
+        System.out.println(ageTemperature(age, 23));
+        System.out.println(ageTemperature(age, -14));
+        System.out.println(ageTemperature(age, 35));
+        System.out.println(ageTemperature(age, 12));
+        System.out.println(ageTemperature(age, -8));
+    }
+
+    public static int generateRandomAge() {
+        Random random = new Random();
+        int age = random.nextInt(80)+1;
+        return age;
     }
 
     public static String ageTemperature(int age, int temperature) {
