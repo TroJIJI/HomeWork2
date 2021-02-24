@@ -13,13 +13,13 @@ public class Main {
 
     public static String ageTemperature(int age, int temperature) {
         if ((20 < age && age < 45) && (temperature > -20 && temperature < 30)) {
-            return "можно идти гулять вася";
+            return "можно идти гулять ";
         } else if (age < 20 && (temperature > 0 && temperature < 28)) {
-            return "можно идти гулять дядя";
+            return "можно идти гулять ";
         } else if (age > 45 && (temperature > -10 && temperature < 25)) {
-            return "можно идти гулять старпер";
+            return "можно идти гулять ";
         } else {
-            return "оставайтест дома";
+            return "оставайтесь дома";
         }
     }
 }
